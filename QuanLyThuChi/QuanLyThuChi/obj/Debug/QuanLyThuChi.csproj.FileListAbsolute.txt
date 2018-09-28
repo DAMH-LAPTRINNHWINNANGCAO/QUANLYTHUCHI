@@ -20,3 +20,15 @@ C:\Users\Thuy Duong\Documents\GitHub\PM_QUANLUTHUCHI\QuanLyThuChi\QuanLyThuChi\o
 C:\Users\Thuy Duong\Documents\GitHub\PM_QUANLUTHUCHI\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe
 C:\Users\Thuy Duong\Documents\GitHub\PM_QUANLUTHUCHI\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.pdb
 C:\Users\Thuy Duong\Documents\GitHub\PM_QUANLUTHUCHI\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.frm_CauHinh.resources
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe.config
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.pdb
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.exe
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\bin\Debug\QuanLyThuChi.pdb
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.csprojResolveAssemblyReference.cache
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.frm_CauHinh.resources
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.LogIn.resources
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.Properties.Resources.resources
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.csproj.GenerateResource.Cache
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.exe.licenses
+E:\STUDY\DH_Nam4\LT_Win_NC\QUANLYTHUCHICANHAN\QuanLyThuChi\QuanLyThuChi\obj\Debug\QuanLyThuChi.MainForm.resources

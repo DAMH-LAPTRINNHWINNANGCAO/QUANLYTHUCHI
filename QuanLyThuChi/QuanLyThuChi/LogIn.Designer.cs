@@ -81,6 +81,7 @@
             this.txt_Password.Size = new System.Drawing.Size(219, 20);
             this.txt_Password.TabIndex = 1;
             this.txt_Password.Tag = "1";
+            this.txt_Password.UseSystemPasswordChar = true;
             // 
             // btn_login
             // 
