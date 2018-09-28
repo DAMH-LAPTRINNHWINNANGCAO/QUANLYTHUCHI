@@ -35,22 +35,30 @@ namespace QuanLyThuChi
                 this.txt_Password.Focus();
                 return;
             }
-            if (CauHinh.Check_Config() == 0)
+            int check_config = CauHinh.Check_Config();
+            if (check_config == 0)
             {
                 ProcessLogin();// Cấu hình phù hợp xử lý đăng nhập
             }
 
-            else if (CauHinh.Check_Config() == 1)
+            else if (check_config == 1)
             {
                 MessageBox.Show("Chuỗi cấu hình không tồn tại");// Xử lý cấu hình
-                //ProcessConfig();
+                ProcessConfig();
             }
             else
             {
                 MessageBox.Show("Chuỗi cấu hình không phù hợp");// Xử lý cấu hình
-                //ProcessConfig();
+                ProcessConfig();
             } 
          }
+
+        private void ProcessConfig()
+        {
+            this.Hide();
+            frm_CauHinh frm = new frm_CauHinh();
+            frm.Show();
+        }
 
         private void ProcessLogin()
         {
@@ -68,7 +76,7 @@ namespace QuanLyThuChi
                 return;
             }
             MainForm frm = new MainForm();
-            frm.Show(); ;
+            frm.Show(); 
             this.Hide();
         }
 

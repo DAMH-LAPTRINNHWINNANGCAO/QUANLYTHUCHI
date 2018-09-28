@@ -12,7 +12,7 @@ namespace QuanLyThuChi
 {
     public partial class frm_CauHinh : Form
     {
-        LoginResult CauHinh;
+        LoginResult CauHinh = new LoginResult();
         public frm_CauHinh()
         {
             InitializeComponent();
@@ -52,12 +52,19 @@ namespace QuanLyThuChi
         {
             CauHinh.ChangeConnectionString( cb_Server.Text, cb_Database.Text, txt_UserName.Text, txt_Password.Text);
             this.Close();
+            LogIn frm = new LogIn();
+            frm.Show();
 
         }
 
         private void btn_huy_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frm_CauHinh_Load(object sender, EventArgs e)
+        {
+            
         }
 
         

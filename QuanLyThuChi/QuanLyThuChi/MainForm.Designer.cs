@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+<<<<<<< HEAD
             this.officeNavigationBar = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.employeesNavBarGroup = new DevExpress.XtraNavBar.NavBarGroup();
@@ -52,18 +53,44 @@
             this.customersLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
+=======
+            this.bbiPrintPreview = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiRecordsCount = new DevExpress.XtraBars.BarStaticItem();
+            this.bbiNew = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiEdit = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiDelete = new DevExpress.XtraBars.BarButtonItem();
+            this.bbiRefresh = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
-            this.navigationFrame.SuspendLayout();
-            this.employeesNavigationPage.SuspendLayout();
-            this.customersNavigationPage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabbedView
+            // gridControl
             // 
-            this.tabbedView.RootContainer.Element = null;
+            this.gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl.Location = new System.Drawing.Point(0, 146);
+            this.gridControl.MainView = this.gridView;
+            this.gridControl.MenuManager = this.ribbonControl;
+            this.gridControl.Name = "gridControl";
+            this.gridControl.Size = new System.Drawing.Size(790, 453);
+            this.gridControl.TabIndex = 2;
+            this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView});
+            this.gridControl.Click += new System.EventHandler(this.gridControl_Click);
+            // 
+            // gridView
+            // 
+            this.gridView.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gridView.GridControl = this.gridControl;
+            this.gridView.Name = "gridView";
+            this.gridView.OptionsBehavior.Editable = false;
+            this.gridView.OptionsBehavior.ReadOnly = true;
             // 
             // ribbonControl
             // 
@@ -72,19 +99,25 @@
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
-            this.skinRibbonGalleryBarItem,
-            this.barSubItemNavigation,
-            this.employeesBarButtonItem,
-            this.customersBarButtonItem,
-            this.barButtonItem1});
+            this.bbiPrintPreview,
+            this.bsiRecordsCount,
+            this.bbiNew,
+            this.bbiEdit,
+            this.bbiDelete,
+            this.bbiRefresh});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.ribbonControl.MaxItemId = 1;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
+=======
+            this.ribbonControl.MaxItemId = 20;
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage});
+            this.ribbonPage1});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+<<<<<<< HEAD
             this.ribbonControl.Size = new System.Drawing.Size(792, 147);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -172,30 +205,72 @@
             this.ribbonPageGroup});
             this.ribbonPage.Name = "ribbonPage";
             this.ribbonPage.Text = "View";
+=======
+            this.ribbonControl.Size = new System.Drawing.Size(790, 146);
+            this.ribbonControl.StatusBar = this.ribbonStatusBar;
+            this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
-            // ribbonPageGroupNavigation
+            // bbiPrintPreview
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             // 
+            this.bbiPrintPreview.Caption = "Print Preview";
+            this.bbiPrintPreview.Id = 14;
+            this.bbiPrintPreview.ImageOptions.ImageUri.Uri = "Preview";
+            this.bbiPrintPreview.Name = "bbiPrintPreview";
+            this.bbiPrintPreview.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiPrintPreview_ItemClick);
+            // 
+<<<<<<< HEAD
             this.ribbonPageGroupNavigation.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation";
             this.ribbonPageGroupNavigation.Text = "Module";
+=======
+            // bsiRecordsCount
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             // 
-            // ribbonPageGroup
+            this.bsiRecordsCount.Caption = "RECORDS : 0";
+            this.bsiRecordsCount.Id = 15;
+            this.bsiRecordsCount.Name = "bsiRecordsCount";
             // 
-            this.ribbonPageGroup.AllowTextClipping = false;
-            this.ribbonPageGroup.ItemLinks.Add(this.skinRibbonGalleryBarItem);
-            this.ribbonPageGroup.Name = "ribbonPageGroup";
-            this.ribbonPageGroup.ShowCaptionButton = false;
-            this.ribbonPageGroup.Text = "Appearance";
+            // bbiNew
             // 
+<<<<<<< HEAD
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 576);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
             this.ribbonStatusBar.Size = new System.Drawing.Size(792, 23);
+=======
+            this.bbiNew.Caption = "New";
+            this.bbiNew.Id = 16;
+            this.bbiNew.ImageOptions.ImageUri.Uri = "New";
+            this.bbiNew.Name = "bbiNew";
             // 
-            // navigationFrame
+            // bbiEdit
             // 
+            this.bbiEdit.Caption = "Edit";
+            this.bbiEdit.Id = 17;
+            this.bbiEdit.ImageOptions.ImageUri.Uri = "Edit";
+            this.bbiEdit.Name = "bbiEdit";
+            // 
+            // bbiDelete
+            // 
+            this.bbiDelete.Caption = "Delete";
+            this.bbiDelete.Id = 18;
+            this.bbiDelete.ImageOptions.ImageUri.Uri = "Delete";
+            this.bbiDelete.Name = "bbiDelete";
+            // 
+            // bbiRefresh
+            // 
+            this.bbiRefresh.Caption = "Refresh";
+            this.bbiRefresh.Id = 19;
+            this.bbiRefresh.ImageOptions.ImageUri.Uri = "Refresh";
+            this.bbiRefresh.Name = "bbiRefresh";
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
+            // 
+            // ribbonPage1
+            // 
+<<<<<<< HEAD
             this.navigationFrame.Appearance.BackColor = System.Drawing.Color.White;
             this.navigationFrame.Appearance.Options.UseBackColor = true;
             this.navigationFrame.Controls.Add(this.employeesNavigationPage);
@@ -211,15 +286,35 @@
             this.navigationFrame.Size = new System.Drawing.Size(627, 379);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
+=======
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
+            this.ribbonPage1.MergeOrder = 0;
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Home";
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             // 
-            // employeesNavigationPage
+            // ribbonPageGroup1
             // 
+<<<<<<< HEAD
             this.employeesNavigationPage.Controls.Add(this.employeesLabelControl);
             this.employeesNavigationPage.Name = "employeesNavigationPage";
             this.employeesNavigationPage.Size = new System.Drawing.Size(627, 379);
+=======
+            this.ribbonPageGroup1.AllowTextClipping = false;
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiNew);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiEdit);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiDelete);
+            this.ribbonPageGroup1.ItemLinks.Add(this.bbiRefresh);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.ShowCaptionButton = false;
+            this.ribbonPageGroup1.Text = "Tasks";
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             // 
-            // employeesLabelControl
+            // ribbonPageGroup2
             // 
+<<<<<<< HEAD
             this.employeesLabelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 25.25F);
             this.employeesLabelControl.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.employeesLabelControl.Appearance.Options.UseFont = true;
@@ -261,39 +356,63 @@
             // defaultLookAndFeel1
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Xmas 2008 Blue";
+=======
+            this.ribbonPageGroup2.AllowTextClipping = false;
+            this.ribbonPageGroup2.ItemLinks.Add(this.bbiPrintPreview);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
+            this.ribbonPageGroup2.Text = "Print and Export";
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.ItemLinks.Add(this.bsiRecordsCount);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 574);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbonControl;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(790, 25);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Money Twins";
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(792, 599);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.navBarControl);
             this.Controls.Add(this.officeNavigationBar);
+=======
+            this.ClientSize = new System.Drawing.Size(790, 599);
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
             this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.gridControl);
             this.Controls.Add(this.ribbonControl);
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
-            ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
-            this.navigationFrame.ResumeLayout(false);
-            this.employeesNavigationPage.ResumeLayout(false);
-            this.customersNavigationPage.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView;
+        private DevExpress.XtraGrid.GridControl gridControl;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem bbiPrintPreview;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
+<<<<<<< HEAD
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupNavigation;
         private DevExpress.XtraBars.BarSubItem barSubItemNavigation;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem;
@@ -309,6 +428,13 @@
         private DevExpress.XtraBars.BarButtonItem employeesBarButtonItem;
         private DevExpress.XtraBars.BarButtonItem customersBarButtonItem;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+=======
+        private DevExpress.XtraBars.BarStaticItem bsiRecordsCount;
+        private DevExpress.XtraBars.BarButtonItem bbiNew;
+        private DevExpress.XtraBars.BarButtonItem bbiEdit;
+        private DevExpress.XtraBars.BarButtonItem bbiDelete;
+        private DevExpress.XtraBars.BarButtonItem bbiRefresh;
+>>>>>>> d80bd1583d2ef1aca54b90a334b2a9ea24ebb9cf
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
     }
 }
