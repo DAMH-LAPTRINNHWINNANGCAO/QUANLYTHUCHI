@@ -13,7 +13,7 @@ namespace QuanLyThuChi
     {
         public static int Check_User(string pUser, string pPass)
         {
-            SqlDataAdapter daUser = new SqlDataAdapter("select * from QL_NGUOI_DUNG where MANGUOIDUNG='" + pUser + "' and MATKHAU ='" + pPass + "'", Properties.Settings.Default.ConnectString);
+            SqlDataAdapter daUser = new SqlDataAdapter("select * from QL_NGUOI_DUNG where MANGUOIDUNG='" + pUser + "' and MATKHAU ='" + pPass + "'", Properties.Settings.Default.ConnectStr);
             DataTable dt = new DataTable();
             daUser.Fill(dt);
             if (dt.Rows.Count == 0)
@@ -27,9 +27,9 @@ namespace QuanLyThuChi
 
         public int Check_Config()
         {
-            if (Properties.Settings.Default.ConnectString == string.Empty)
+            if (Properties.Settings.Default.ConnectStr == string.Empty)
                 return 1;  //chuoi cau hinh khong ton tai
-            SqlConnection conn = new SqlConnection(Properties.Settings.Default.ConnectString);
+            SqlConnection conn = new SqlConnection(Properties.Settings.Default.ConnectStr);
             try
             {
                 if (conn.State == System.Data.ConnectionState.Closed)
@@ -44,7 +44,7 @@ namespace QuanLyThuChi
 
         }
 
-        public DataTable GetServerName()
+        public  DataTable GetServerName()
         {
             SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
             System.Data.DataTable table = instance.GetDataSources();
@@ -57,9 +57,9 @@ namespace QuanLyThuChi
             DataTable dt = new DataTable();
             try
             {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT name FROM sys.databases", "Data Source=" + pServerName + ";Initial Catalog=" + "master" + ";User ID=" + pUser + ";pwd = " + pPass + "");
+                SqlDataAdapter da = new SqlDataAdapter("SELECT name FROM sys.databases", "Data Source="+pServerName+" ;Initial Catalog=" + "master" + ";User ID=" + pUser + ";pwd = " + pPass + "");
                 da.Fill(dt);
-                foreach (System.Data.DataRow row in dt.Rows)
+                foreach (System.Data.DataRow row in dt.Rows)               
                 {
                     foreach (System.Data.DataColumn col in dt.Columns)
                     {
@@ -76,7 +76,7 @@ namespace QuanLyThuChi
 
         public void ChangeConnectionString(string pServerName, string pDataBase, string pUser, string pPass)
         {
-            QuanLyThuChi.Properties.Settings.Default.ConnectString = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";pwd = " + pPass + "";
+            QuanLyThuChi.Properties.Settings.Default.ConnectStr = "Data Source=" + pServerName + ";Initial Catalog=" + pDataBase + ";User ID=" + pUser + ";pwd = " + pPass + "";
             Properties.Settings.Default.Save();
         }
     }

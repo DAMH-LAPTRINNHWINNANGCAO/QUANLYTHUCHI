@@ -69,5 +69,15 @@ namespace QuanLyThuChi.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap options_settings_folder_tools_512 {
+            get {
+                object obj = ResourceManager.GetObject("options_settings_folder_tools-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
